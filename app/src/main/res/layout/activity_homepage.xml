@@ -21,6 +21,10 @@
         android:background="#fff"
         app:activeTabColor="@color/colorAccent"
         app:inactiveTabColor="@color/bottomBarDefaultTextColor"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
 
 
 </RelativeLayout>
