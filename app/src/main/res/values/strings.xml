@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">fruitsorder</string>
+    <string name="fruitsa">Fruits</string>
+    <string name="vegetablesa">Vegetables</string>
+    <string name="baga">shopping bag</string>
+    <string name="profilea">Profile</string>
+</resources>

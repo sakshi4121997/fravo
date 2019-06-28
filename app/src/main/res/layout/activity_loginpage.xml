@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/loginimage"
+        android:backgroundTint="#51e1dfdf"
+        android:scaleType="centerCrop" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="150dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="FRAVO"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/cambria"
+            android:textColorHint="#fff"
+            android:layout_centerHorizontal="true"
+            android:textSize="30dp"
+            android:id="@+id/ettextview"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ettextview"
+            android:hint="Username"
+            android:background="@drawable/blur"
+            android:padding="10dp"
+            android:drawablePadding="16dp"
+            android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+            android:fontFamily="@font/cambria"
+            android:textSize="20dp"
+            android:textColorHint="#fff"
+            android:backgroundTint="#fff"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/etusername"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etusername"
+            android:hint="Password"
+            android:background="@drawable/blur"
+            android:padding="10dp"
+            android:drawablePadding="16dp"
+            android:drawableLeft="@drawable/ic_lock_open_black_24dp"
+            android:fontFamily="@font/cambria"
+            android:textSize="20dp"
+            android:textColorHint="#fff"
+            android:backgroundTint="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:id="@+id/etpassword"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Login>"
+            android:layout_marginTop="10dp"
+            android:textColorHint="#fff"
+            android:layout_below="@+id/etpassword"
+            android:background="@drawable/design"
+            android:layout_marginRight="70dp"
+            android:layout_marginLeft="150dp"
+            android:id="@+id/blogin" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/blogin"
+            android:id="@+id/etnew"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="New User Rergister Here"
+                android:id="@+id/tvnew"
+                android:textColorHint="#fff"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Forgot password"
+                android:layout_alignParentRight="true"
+                android:textColorHint="#fff"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Sign Up with"
+            android:layout_below="@+id/etnew"
+            android:id="@+id/etelse"
+            android:fontFamily="@font/cambria"
+            android:textColorHint="#fff"
+            android:layout_centerHorizontal="true"
+            android:padding="15dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@+id/etelse"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="120dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/fbb" />
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:src="@drawable/goo" />
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/twii"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
