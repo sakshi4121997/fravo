@@ -22,7 +22,7 @@ public class Homepage extends AppCompatActivity implements View.OnClickListener 
         setContentView(R.layout.activity_homepage);
         bottomNavigationBar=findViewById(R.id.bottom_bar);
 
-        addFragment(new Fragmenthome());
+        addFragment(new FragmentHome());
         BottomBarItem item=new BottomBarItem(R.drawable.fruit,R.string.fruitsa);
         BottomBarItem item1=new BottomBarItem(R.drawable.vegetables,R.string.vegetablesa);
         BottomBarItem item2=new BottomBarItem(R.drawable.bag,R.string.baga);
@@ -38,19 +38,19 @@ public class Homepage extends AppCompatActivity implements View.OnClickListener 
             public void onSelect(int position) {
                 switch (position) {
                     case 0: {
-                        replaceFragment(new Fragmenthome());
+                        replaceFragment(new FragmentHome());
                         break;
                     }
                     case 1: {
-                        replaceFragment(new Fragmenthome());
+                        replaceFragment(new FragmentHome());
                         break;
                     }
                     case 2: {
-                        replaceFragment(new Fragmenthome());
+                        replaceFragment(new FragmentHome());
                         break;
                     }
                     case 3: {
-                        replaceFragment(new Fragmenthome());
+                        replaceFragment(new FragmentHome());
                         break;
                     }
                 }
