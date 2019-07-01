@@ -8,9 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.squareup.picasso.Picasso;
 
 import java.util.Random;
 
@@ -18,6 +18,7 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.Holder> {
     int[] color;
     Context context;
     Fruits fruits;
+
     ItemAdapter(int[] color, Context context, Fruits fruits)
     {
         this.context=context;
@@ -42,6 +43,12 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.Holder> {
         Glide.with(context)
                 .load(fruits.images[i])
                 .into(holder.imageView);
+        holder.name.setText(fruits.names[i]);
+        //holder.price.setText(fruits.price[i]);
+        holder.dec.setText(fruits.description[i]);
+        holder.imageView.setOnClickListener(view -> {
+
+        });
     }
 
     @Override
@@ -52,10 +59,16 @@ public class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.Holder> {
     public class Holder extends RecyclerView.ViewHolder {
         LinearLayout color;
         ImageView imageView;
+        TextView name;
+        TextView dec;
+        TextView price;
         public Holder(@NonNull View itemView) {
             super(itemView);
             color=itemView.findViewById(R.id.colorView);
             imageView=itemView.findViewById(R.id.itemImage);
+            name=itemView.findViewById(R.id.name);
+            dec=itemView.findViewById(R.id.description);
+            price=itemView.findViewById(R.id.price);
         }
     }
 }
