@@ -26,12 +26,14 @@ class Vegetables {
 
     };
     String[] names={"Garlic","Ginger","Green Chillis","Tomato","Onion","Potato","Ladyfinger","Pumpkink",
-            "Raddish","Carrot","BitterGourd","RidgeGourd","BottleGourd","Capsicum","Red Bell Pepper","Yellow Bell Pepper","Cucumber","Caulflower","Cabbage","EggPlant",
-            "BeetRoot"
+            "Raddish","Carrot","BitterGourd","RidgeGourd","BottleGourd","Capsicum","Red Bell Pepper","Yellow Bell Pepper","Cucumber","Caulflower","Cabbage",
+            "EggPlant", "BeetRoot"
     };
     String[] price={"Rs.150","Rs.58","Rs.59","Rs.65","Rs.40","Rs.20","Rs.50","Rs.25","Rs.30","Rs.44","Rs.45","Rs.35","Rs.30","Rs.55","Rs.190","Rs.190",
             "Rs.30","Rs.32","Rs.12","Rs.30","Rs.30"};
-    String[] description={"","","","","","","","","","","","","","","","","","","","",""
+    String[] description={"Enhance the taste of your sabji","Main Ingredient for tea","Its Spicy","Add some Tango","Will make you Cry","Its Your  favourite Aloo",
+            "Its not any lady but a sabji","Enjoy By making sweet petha","Seems to Red it's Mooli","Be a rabbit","Its Bitter but Healthy for you ",
+            "Tori","Lauki","So called Shimlka Mirch","","","","","","",""
 
 
     };

@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -34,7 +35,7 @@ public class FragmentVegetables extends Fragment {
         recyclerView=view.findViewById(R.id.recycler);
         Vegetables vegetables=new Vegetables();
         MyAdapter2 adapter=new MyAdapter2(color,getActivity(),vegetables);
-        RecyclerView.LayoutManager manager=new LinearLayoutManager(getActivity(),LinearLayoutManager.VERTICAL,false);
+        RecyclerView.LayoutManager manager=new GridLayoutManager(getActivity(),2);
         recyclerView.setLayoutManager(manager);
         recyclerView.setAdapter(adapter);
     }

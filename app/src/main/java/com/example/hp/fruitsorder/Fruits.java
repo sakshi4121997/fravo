@@ -25,11 +25,12 @@ class Fruits {
             "Papaya","Peach","Strawberry","Black Grapes","Green Grapes","WaterMelon","MuskMelon","Kiwi","Avocado","Gauava"
 
     };
-    String [] price={"Rs.60","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs."
+    String [] price={"Rs.60","Rs.100","Rs.50","Rs.100","Rs.80","Rs.500","Rs.80","Rs.50","Rs.100","Rs.60","Rs.80","Rs.300",
+            "Rs.100","Rs.100","Rs.20","Rs.20","Rs.800","Rs.200","Rs.50"
     };
-    String[] description={"12 ","","","","","","","","","","","","","","","","","",""
-
-    };
+    String[] description={"Enjoy the joyness of peeling","Juicy and Fruity","Its Mango season!","Fresh and Juicy","Its Red!","Enjoy its Juiceness",
+            "Appears to green but white whithin","Best for gut problems","its Peachy season","Its sweet!","purple not black","White appears to be green",
+            "Eat Mitha pani","Refreshing Melon","It's Beautiful inside","Its Videshi!","Its Evergreen","Its Videshi!","Its Evergreen"};
 
 
 }
