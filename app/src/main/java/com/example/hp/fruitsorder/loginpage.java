@@ -60,7 +60,7 @@ public class loginpage extends AppCompatActivity {
             @Override
             public void run() {
                 dialog.dismiss();
-                Intent intent=new Intent(loginpage.this,homepage.class);
+                Intent intent=new Intent(loginpage.this,Homepage.class);
                 startActivity(intent);
             }
         },2000);
