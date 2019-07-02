@@ -31,7 +31,7 @@ class Vegetables {
     };
     String[] price={"Rs.150","Rs.58","Rs.59","Rs.65","Rs.40","Rs.20","Rs.50","Rs.25","Rs.30","Rs.44","Rs.45","Rs.35","Rs.30","Rs.55","Rs.190","Rs.190",
             "Rs.30","Rs.32","Rs.12","Rs.30","Rs.30"};
-    String[] description={
+    String[] description={"","","","","","","","","","","","","","","","","","","","",""
 
 
     };

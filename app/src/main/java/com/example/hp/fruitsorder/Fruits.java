@@ -27,7 +27,7 @@ class Fruits {
     };
     String [] price={"Rs.60","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs.","Rs."
     };
-    String[] description={"12 "
+    String[] description={"12 ","","","","","","","","","","","","","","","","","",""
 
     };
 
