@@ -1,12 +1,14 @@
 package com.example.hp.fruitsorder;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -14,6 +16,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 
 import java.util.Random;
+import java.util.logging.Handler;
 
 class MyAdapter2 extends RecyclerView.Adapter<MyAdapter2.Holder> {
     int[] color;
@@ -41,9 +44,24 @@ class MyAdapter2 extends RecyclerView.Adapter<MyAdapter2.Holder> {
         Glide.with(context)
                 .load(vegetables.images[i])
                 .into(holder.imageView);
+        Glide.with(context).load(vegetables.images[i]).placeholder(R.drawable.dummy).dontAnimate().into(holder.imageView);
         holder.name.setText(vegetables.names[i]);
         holder.dec.setText(vegetables.description[i]);
         holder.price.setText(vegetables.price[i]);
+        holder.button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new Handler().postdelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent intent;
+                        intent = new Intent(MyAdapter2.this,VegetableSellers.class);
+                    }
+
+                    }
+                }){
+            }
+        });
     }
 
     @Override
@@ -57,6 +75,7 @@ class MyAdapter2 extends RecyclerView.Adapter<MyAdapter2.Holder> {
         TextView name;
         TextView dec;
         TextView price;
+        Button button;
         public Holder(@NonNull View itemView) {
             super(itemView);
             color=itemView.findViewById(R.id.colorView);
@@ -64,6 +83,7 @@ class MyAdapter2 extends RecyclerView.Adapter<MyAdapter2.Holder> {
             name=itemView.findViewById(R.id.name);
             dec=itemView.findViewById(R.id.description);
             price=itemView.findViewById(R.id.price);
+            button=itemView.findViewById(R.id.add);
         }
     }
 }

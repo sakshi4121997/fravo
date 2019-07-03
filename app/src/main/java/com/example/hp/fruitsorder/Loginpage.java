@@ -10,8 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
-public class loginpage extends AppCompatActivity {
+public class Loginpage extends AppCompatActivity {
     Button login;
     EditText username;
     EditText password;
@@ -31,10 +30,10 @@ public class loginpage extends AppCompatActivity {
                 String u =username.getText().toString();
                 String p=password.getText().toString();
                 if(u.isEmpty()||p.isEmpty())
-                    Toast.makeText(loginpage.this,"All the fields are required",Toast.LENGTH_LONG).show();
+                    Toast.makeText(Loginpage.this,"All the fields are required",Toast.LENGTH_LONG).show();
                 else
                     {
-                        Toast.makeText(loginpage.this,"Logging to "+u,Toast.LENGTH_LONG).show();
+                        Toast.makeText(Loginpage.this,"Logging to "+u,Toast.LENGTH_LONG).show();
                         showcustomdialog();
                     }
             }
@@ -45,7 +44,7 @@ public class loginpage extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        Intent intent=new Intent(loginpage.this,Registration_page.class);
+                        Intent intent=new Intent(Loginpage.this,Registration_page.class);
                         startActivity(intent);
                     }
                 },2000);
@@ -60,7 +59,7 @@ public class loginpage extends AppCompatActivity {
             @Override
             public void run() {
                 dialog.dismiss();
-                Intent intent=new Intent(loginpage.this,Homepage.class);
+                Intent intent=new Intent(Loginpage.this,Homepage.class);
                 startActivity(intent);
             }
         },2000);

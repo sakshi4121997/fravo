@@ -1,11 +1,13 @@
 package com.example.hp.fruitsorder;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -13,6 +15,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 
 import java.util.Random;
+import java.util.logging.Handler;
 
 class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.Holder> {
     int[] color;
@@ -39,9 +42,24 @@ class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.Holder> {
         Glide.with(context)
                 .load(fruits.images[i])
                 .into(holder.imageView);
+        Glide.with(context).load(fruits.images[i]).placeholder(R.drawable.dummy).dontAnimate().into(holder.imageView);
         holder.name.setText(fruits.names[i]);
         holder.dec.setText(fruits.description[i]);
         holder.price.setText(fruits.price[i]);
+        holder.button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new Handler().postdelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        Intent intent;
+                        intent = new Intent(MyAdapter2.this,FruitSellers.class);
+                    }
+
+                }
+            }){
+            }
+        });
 
     }
 
@@ -56,8 +74,10 @@ class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.Holder> {
         TextView name;
         TextView dec;
         TextView price;
+        Button button;
         public Holder(@NonNull View itemView) {
             super(itemView);
+            button=itemView.findViewById(R.id.add);
             color=itemView.findViewById(R.id.colorView);
             imageView=itemView.findViewById(R.id.itemImage);
             name=itemView.findViewById(R.id.name);
