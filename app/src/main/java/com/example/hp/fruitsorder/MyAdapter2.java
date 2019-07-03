@@ -51,15 +51,9 @@ class MyAdapter2 extends RecyclerView.Adapter<MyAdapter2.Holder> {
         holder.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new Handler().postdelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        Intent intent;
-                        intent = new Intent(MyAdapter2.this,VegetableSellers.class);
-                    }
 
-                    }
-                }){
+                Intent intent;
+                intent = new Intent(context, VegetableSellers.class);
             }
         });
     }

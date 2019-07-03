@@ -49,16 +49,11 @@ class ItemAdapter extends RecyclerView.Adapter<ItemAdapter.Holder> {
         holder.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new Handler().postdelayed(new Runnable() {
-                    @Override
-                    public void run() {
+
                         Intent intent;
-                        intent = new Intent(MyAdapter2.this,FruitSellers.class);
+                        intent = new Intent(context,FruitSellers.class);
                     }
 
-                }
-            }){
-            }
         });
 
     }
